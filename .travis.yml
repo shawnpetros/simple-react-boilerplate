@@ -1,0 +1,17 @@
+language: node_js
+branches:
+  only:
+    - master
+node_js:
+  - "stable"
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y nasm
+cache:
+  directories:
+  - node_modules
+script:
+  - set -e
+  - npm test
+  - npm run build
+  - set +e
