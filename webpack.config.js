@@ -3,12 +3,12 @@ const path = require('path')
 
 module.exports = {
   entry: [
-    './src/index.js'
+    './src/index.jsx'
   ],
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: ['babel-loader']
       },
@@ -34,5 +34,9 @@ module.exports = {
   devServer: {
     contentBase: './public',
     hot: true
+  },
+  devtool: 'inline-source-map',
+  resolve: {
+    extensions: ['.js', '.jsx']
   }
 }
