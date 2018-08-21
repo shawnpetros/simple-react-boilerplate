@@ -9,6 +9,6 @@ cache:
   - node_modules
 script:
   - set -e
-  - npm test
+  - npm test:cover
   - npm run build
   - set +e
