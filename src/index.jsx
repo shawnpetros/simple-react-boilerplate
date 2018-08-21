@@ -9,7 +9,7 @@ import App from './components/app'
 import reducers from './reducers'
 
 const createStoreWithMiddleware = applyMiddleware()(createStore)
-const store = createStoreWithMiddleware(
+export const store = createStoreWithMiddleware(
   reducers,
   // redux dev tools
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()

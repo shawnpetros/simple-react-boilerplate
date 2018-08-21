@@ -1,4 +1,4 @@
-export const increase = () => ({ type: 'INCREASE_COUNT' })
-export const decrease = () => ({ type: 'DECREASE_COUNT' })
+import { INCREASE_COUNT, DECREASE_COUNT } from '../constants/index'
 
-export default {}
+export const increase = () => ({ type: INCREASE_COUNT })
+export const decrease = () => ({ type: DECREASE_COUNT })
