@@ -3,7 +3,7 @@ branches:
   only:
     - master
 node_js:
-  - "lts"
+  - "--lts"
 cache:
   directories:
   - node_modules
