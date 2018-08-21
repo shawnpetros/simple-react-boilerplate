@@ -3,10 +3,7 @@ branches:
   only:
     - master
 node_js:
-  - "stable"
-before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install -y nasm
+  - "--lts"
 cache:
   directories:
   - node_modules
